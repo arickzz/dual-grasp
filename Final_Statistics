@@ -1,0 +1,29 @@
+
+This data set was created with 78 objects.
+In 30 of those objects, the algorithm could not find any grasp.
+
+1602 grasps were discared due to irregular distance between grasps.
+0 grasps were discared because they had no valid contact points.
+
+Number of grasps
+
+	Total:  8363
+	Average by object:  174.22916666666666
+	Max and Min in an object:  240  |  0
+
+Evaluation metrics (Average | Max | Min)
+
+	Shape Complementarity:  0.03702562309004328  |  0.10960371024124965  |  0.0
+	Force Closure:  [382.05209031]  |  [4054.14567866]  |  [0.58217832]
+	Dexterity:  [0.16696614]  |  [0.37157633]  |  [0.09893646]
+	Force Optimization:  [0.49861312]  |  [0.99999889]  |  [5.56077779e-07]
+
+Enclosing Points
+
+	Average by object:  1705.9110367093149
+	Max and Min in an object:  4123  |  414
+
+Contact Points
+
+	Average by object:  37.11873729522898
+	Max and Min in an object:  90  |  7

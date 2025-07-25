@@ -1,0 +1,7 @@
+README.md
+setup.py
+gog.egg-info/PKG-INFO
+gog.egg-info/SOURCES.txt
+gog.egg-info/dependency_links.txt
+gog.egg-info/requires.txt
+gog.egg-info/top_level.txt

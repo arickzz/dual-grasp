@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gog
+Version: 0.1
+Author: Marios Kiatos
+Author-email: mkiatos@auth.gr
+Requires-Dist: pybullet==3.0.8
+Requires-Dist: opencv-python==4.5.1.48
+Requires-Dist: kinpy
+Requires-Dist: open3d
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: gdown

@@ -1,0 +1,55 @@
+env:
+  render: True
+  workspace:
+    pos: [0, 0, 0]
+    quat:
+      w: 0.7071232
+      x: 0.0
+      y: 0.0
+      z: 0.707904
+  camera:
+    pos: [0, -0.5, 0.5 ]
+    target_pos: [0, 0, 0]
+    up_vector: [0.0, 1.0, 0.0]
+    intrinsics:
+      fx: 463
+      fy: 463
+      cx: 320
+      cy: 240
+      width: 640
+      height: 480
+  scene_generation:
+    nr_of_objects:
+      - 1
+      - 2
+
+grasp_sampling:
+  samples: 20
+  rotations: 4
+  minimum_pts_in_closing_region: 1000
+#  c_shape_hand: # hardcoded values for Barret Hand
+#    bhand_angles: [1.2, 1, 0.8, 0.65]  
+#    inner_radius: [0.05, 0.06, 0.07, 0.08]
+#    outer_radius: [0.09, 0.10, 0.11, 0.12]
+#    phi: [1.04, 0.785, 0.523, 0]
+#    gripper_width: 0.07
+        
+  c_shape_hand: # hardcoded values for RH8DR
+    bhand_angles: [0.4, 0.245, 0.160, 0]
+    inner_radius: [0.025, 0.035, 0.038, 0.05]
+    outer_radius: [0.067, 0.077, 0.084, 0.095]
+    phi: [0, 0, 0, 0]
+    gripper_width: 0.09
+     
+
+vae:
+  model_weights: '../downloads/vae/model.pt'
+
+power_grasping:
+  optimizer:
+    particles: 5
+    max_iterations: 10
+    w: 0.72
+    c1: 1.49
+    c2: 1.49
+    metric: 'shape_complementarity'
